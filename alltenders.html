@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tenders</title>
+
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16"> -->
+</head>
+
+<body>
+    <div class="boxed_wrapper">
+
+        <!--Start Main Header-->
+        <header class="main-header header-style2 stricky">
+            <div class="inner-container clearfix">
+                <div class="logo-box-style2 float-left">
+                    <!-- <a href="index-2.html">
+                        <img src="images/reasources/logo.png" alt="Awesome Logo">
+                    </a> -->
+                    <a href="/" style="font-size:40px;">TENDERS</a>
+                </div>
+                <div class="main-menu-box float-right">
+                    <nav class="main-menu style2 clearfix">
+                        <div class="navbar-header clearfix">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown"><a href="index-2.html">TENDERS</a>
+                                    <ul>
+                                        <li><a href="tenders.html">Open Tenders Notices</a></li>
+                                        <li><a href="tenders.html">Expired Tender</a></li>
+                                        <li><a href="tenders.html">Notices</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="entities.html">CONTRACTS</a>
+                                    <ul>
+                                        <li>
+                                            <a href="entities.html">2016-2017</a>
+                                        </li>
+                                        <li>
+                                            <a href="entities.html">2017-2018</a>
+                                        </li>
+                                        <li>
+                                            <a href="entities.html">2018-2019</a>
+                                        </li>
+                                        <li>
+                                            <a href="entities.html">2019-2020</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="entities.html">PROCURING ENTITIES</a>
+                                </li>
+                                <li>
+                                    <a href="suppliers.html">SUPPLIERS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="mainmenu-right style2">
+                        <div class="button">
+                            <a class="btn btn-success" href="regform/index.html">PE LOGIN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Main Header-->
+        <div class="row p-3">
+            <div class="col-md-2 form-group">
+                <label>Entity Type</label>
+                <select class="form-control select2" id="type">
+                        <option value="">---Select Entity Type---</option>
+                        <option >Ministry</option>
+                        <option >State Department</option>
+                        <option >County</option>
+                        <option >State Corporation</option>
+                        <option >Commissions and Independent Offices</option>
+                        <option >Public Universities</option>
+                        <option >Public Colleges</option>
+                        <option >Public Schools</option>
+                        <option >NGCDF Committees</option>
+                        <option >NGAAF</option>
+                        <option >County Service Delivery Unit</option>
+                        <option >Diplomatic Commission</option>
+                        <option >County Assemblies</option>
+                        <option >Public Water Companies</option>
+                        <option >County Public Service Board</option>
+                        <option >City Board</option>
+                        <option >Other Entities owned by County Governments</option>
+                        <option >Pension Schemes</option>
+                        <option >The Presidency</option>
+                        <option >Semi-Autonomous Government Agencies</option>
+                                                    				
+                    </select>
+            </div>
+            <div class="col-md-2">
+                <label>EntityName</label>
+                <select class="form-control" id="name">
+                        <option></option>
+                    </select>
+            </div>
+            <div class="col-md-2">
+                <label>Tender Number</label>
+                <input type="text" name="" class="form-control" id="tender_number" style="text-transform: uppercase">
+            </div>
+            <div class="col-md-2">
+                <label>Year Awarded</label>
+                <select name="year" class="form-control" id="year">
+                        <option></option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+               </select>
+            </div>
+            <div class="col-md-2">
+                <label>Month Awarded</label>
+                <select name="month" id="month" class="form-control">
+                            <option></option>
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+             </select>
+            </div>
+            <div class="md-2">
+                <label>Contract Status</label>
+                <select class="form-control" name="status" id="Status">
+                        <option></option>
+                        <option>Ongoing</option>
+                        <option>Completed</option>
+                        <option>Canceled</option>
+                    </select>
+            </div>
+        </div>
+        <div class="row pl-5">
+            <div class="col-md-2">
+                <label>Show
+                <select class="form-control" name="status" id="Status">
+                        <option></option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>500</option>
+                        <option>1000</option>
+                        <option>5000</option>
+                    </select>
+                    Entries
+                </label>
+            </div>
+            <div class="col-md-6">
+                <ul class="post-pagination text-center">
+                    <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row p-0 pt-2">
+            <div class="col-lg-12 col-sm-12">
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr class="info">
+                                <th>EntityType</th>
+                                <th>EntityName</th>
+                                <th>TenderRefNumber</th>
+                                <th>TenderDescription</th>
+                                <th>Supplier/CompanyName</th>
+                                <th>PinNumber</th>
+                                <th>ContractAmount</th>
+                                <th>DateAwarded</th>
+                                <th>DurationToExpiry</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                            <tr>
+                                <td>State Corporation</td>
+                                <td>Kenya Electricity Generating Company</td>
+                                <td>
+                                    <a href="">KGN-GDD-048-2019</a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        TENDER FOR SUPPLY OF SCIENTIFIC LABORATORY EQUIPMENT FOR GEOTHERMAL DE...	
+                                    </a>
+                                </td>
+                                <td>MEIWENTI COMPANY LIMITED</td>
+                                <td>P051752097Q</td>
+                                <td> 6,491,206</td>
+                                <td> 2020-08-06</td>
+                                <td>1 Year</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Start footer area Style4-->
+        <footer class="footer-area style4">
+            <div class="container">
+                <div class="row">
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-footer-widget marbtm50-s4">
+                            <div class="our-info-box">
+                                <p>About</p>
+                                <div class="text">
+                                    <p>The Public Procurement Information Portal is an online platform provided by Public Procurement Regulatory Authority (PPRA) for publication of contract awards and tender notices by Procuring Entities. Procuring Entities
+                                        should consolidate/upload the information on a monthly basis by the 15th day of every subsequent month.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                        <div class="single-footer-widget s4">
+                            <div class="title-style2">
+                                <h3>Related Websites</h3>
+                            </div>
+                            <div class="usefull-links">
+                                <ul class="float-left">
+                                    <li><a href="#">PPRA</a></li>
+                                    <li><a href="#">AGPO</a></li>
+                                    <li><a href="#">IFMIS</a></li>
+                                    <li><a href="#">TREASURY</a></li>
+                                    <li><a href="#">PFMR</a></li>
+                                    <li><a href="#">KRA</a></li>
+                                    <li><a href="#">BRS</a></li>
+                                </ul>
+                                <ul class="float-left borders-left">
+                                    <li><a href="#">AGPO Tenders</a></li>
+                                    <li><a href="#">Goods Tenders</a></li>
+                                    <li><a href="#">Tenders</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12">
+                        <div class="single-footer-widget pdtop50-s4">
+                            <div class="title-style2">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div class="subscribe-box">
+                                <div class="text mb-3">
+                                    <p>Email: root@tenders.com <br> P.O Box 58534-00210, Mombasa, Kenya <br> Telephone: +254-537-3324000/221356286</p>
+                                </div>
+                                <form class="subscribe-form">
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <button class="btn btn-primary" type="submit">Subscribe<span class="flaticon-next"></span></button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+                </div>
+            </div>
+        </footer>
+        <!--End footer area style4-->
+    </div>
+
+
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/wow.js"></script>
+
+    <script src="js/map-helper.js"></script>
+
+    <script src="assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
+    <script src="assets/timepicker/timePicker.js"></script>
+    <script src="assets/html5lightbox/html5lightbox.js"></script>
+
+    <script src="js/custom.js"></script>
+
+
+
+</body>
+
+
+</html>
